@@ -26,7 +26,7 @@ public class CompactNumberFormatting {
         NumberFormat likesFR2 = NumberFormat
                 .getCompactNumberInstance(new Locale("fr", "FR"), NumberFormat.Style.LONG);
         likesFR2.setMaximumFractionDigits(2);
-        System.out.println(likesFR2.format(30011) + " likes");
+        System.out.println(likesFR2.format(30000) + " likes");
         
         
     }

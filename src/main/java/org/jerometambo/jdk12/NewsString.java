@@ -6,14 +6,14 @@ import java.util.List;
 public class NewsString {
     
     public static void main(String... args) {
-        indent();
-    
         transform();
+        indent();
+        
     }
     
     private static void transform() {
         String s = "Space,Soul,Power,Time,Reality,Mind";
-        List<String> infinityStones = s.transform(s1 -> {return Arrays.asList(s1.split(","));});
+        List<String> infinityStones = s.transform(s1 -> Arrays.asList(s1.split(",")));
         System.out.println(infinityStones);
     }
     
